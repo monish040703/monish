@@ -1,0 +1,30 @@
+def trace_data_types(data_item):
+  #print the original data item
+  print("original data item:",data_item)
+  result=None
+  if isinstance(data_item,int):
+    result=data_item+10
+    print("type:int")
+    elif isinstance(data_item,float):
+      result=data_item*2
+      print("type:float")
+      elif isinstance(data_item,str):
+        result=len(data_item)
+        print("type:list")
+        elif isinstance(data_item,dict):
+          result=list(data_item.keys())
+          print("type:dict")
+          else:
+            print("type:unknown")
+            print("result after applying built-in functions:",result)
+            print()
+            trace-data_type(5)
+            trace_data_type(3.14)
+            trace_data_type("hello")
+            trace_data_type([,2,3,4])
+
+            trace_data_type({"a":1,"b":2,"c":3})
+            trace_data_type(true)#this will fall into the "unknown" category
+            
+                          
+  
